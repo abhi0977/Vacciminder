@@ -26,18 +26,9 @@ class NewViewController: UIViewController {
     @IBAction func btnSO(_ sender: Any) {
         try! Auth.auth().signOut()
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main",bundle:nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "Main")
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "Register")
         self.present(newViewController, animated: false,completion: nil)
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  
 }

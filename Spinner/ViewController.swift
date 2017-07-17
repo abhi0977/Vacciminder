@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         Auth.auth().addStateDidChangeListener { auth, user in
-            if let user = user {
+            if user != nil {
                 // User is signed in. Show home screen
                 let storyBoard: UIStoryboard = UIStoryboard(name: "Main",bundle:nil)
                 let newViewController = storyBoard.instantiateViewController(withIdentifier: "Dashboard")
@@ -36,30 +36,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    
     @IBAction func btnLogin(_ sender: Any) {
         
-        Auth.auth().createUser(withEmail: Username.text!, password: Password.text!) { (user, error) in
-            
-            if error == nil {
-                print("You have successfully signed up")
-                //Goes to the Setup page which lets the user take a photo for their profile picture and also chose a username
-                
-//                self.present(vc!, animated: true, completion: nil)
-                 self.loginn()
-            } else {
-                let alertController = UIAlertController(title: "Vacciminderscomplete Error", message: error?.localizedDescription, preferredStyle: .alert)
-                
-                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                alertController.addAction(defaultAction)
-                
-                self.present(alertController, animated: true, completion: nil)
-            }
-        }
-        
-        
-        
-    }
-    func loginn(){
         Auth.auth().signIn(withEmail: Username.text!, password: Password.text!) { (User, Error) in
             
             if Error != nil{
@@ -76,8 +56,11 @@ class ViewController: UIViewController {
             
             
         }
+     
+        
         
     }
+    
 
 }
 
