@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		13BBCDAE8EEC16F9BF431BAF /* Pods_Spinner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED02A6E4FE2CEDE01FF68E5B /* Pods_Spinner.framework */; };
 		9B0EBF941F1C68EE001FB027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0EBF931F1C68EE001FB027 /* AppDelegate.swift */; };
-		9B0EBF961F1C68EE001FB027 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0EBF951F1C68EE001FB027 /* ViewController.swift */; };
+		9B0EBF961F1C68EE001FB027 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0EBF951F1C68EE001FB027 /* UIViewController.swift */; };
 		9B0EBF991F1C68EE001FB027 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0EBF971F1C68EE001FB027 /* Main.storyboard */; };
 		9B0EBF9B1F1C68EE001FB027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B0EBF9A1F1C68EE001FB027 /* Assets.xcassets */; };
 		9B0EBF9E1F1C68EE001FB027 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0EBF9C1F1C68EE001FB027 /* LaunchScreen.storyboard */; };
+		9B0EBFA61F1C748E001FB027 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B0EBFA51F1C748E001FB027 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14E874B3A6F9961777AF62DD /* Pods-Spinner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spinner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spinner/Pods-Spinner.debug.xcconfig"; sourceTree = "<group>"; };
 		9B0EBF901F1C68EE001FB027 /* Spinner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spinner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B0EBF931F1C68EE001FB027 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9B0EBF951F1C68EE001FB027 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B0EBF951F1C68EE001FB027 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		9B0EBF981F1C68EE001FB027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B0EBF9A1F1C68EE001FB027 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B0EBF9D1F1C68EE001FB027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B0EBF9F1F1C68EE001FB027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B0EBFA51F1C748E001FB027 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ED02A6E4FE2CEDE01FF68E5B /* Pods_Spinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5BC5A6BD104E9ACBA376285 /* Pods-Spinner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spinner.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spinner/Pods-Spinner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,8 +71,9 @@
 		9B0EBF921F1C68EE001FB027 /* Spinner */ = {
 			isa = PBXGroup;
 			children = (
+				9B0EBFA51F1C748E001FB027 /* GoogleService-Info.plist */,
 				9B0EBF931F1C68EE001FB027 /* AppDelegate.swift */,
-				9B0EBF951F1C68EE001FB027 /* ViewController.swift */,
+				9B0EBF951F1C68EE001FB027 /* UIViewController.swift */,
 				9B0EBF971F1C68EE001FB027 /* Main.storyboard */,
 				9B0EBF9A1F1C68EE001FB027 /* Assets.xcassets */,
 				9B0EBF9C1F1C68EE001FB027 /* LaunchScreen.storyboard */,
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B0EBF9E1F1C68EE001FB027 /* LaunchScreen.storyboard in Resources */,
+				9B0EBFA61F1C748E001FB027 /* GoogleService-Info.plist in Resources */,
 				9B0EBF9B1F1C68EE001FB027 /* Assets.xcassets in Resources */,
 				9B0EBF991F1C68EE001FB027 /* Main.storyboard in Resources */,
 			);
@@ -211,7 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B0EBF961F1C68EE001FB027 /* ViewController.swift in Sources */,
+				9B0EBF961F1C68EE001FB027 /* UIViewController.swift in Sources */,
 				9B0EBF941F1C68EE001FB027 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +378,7 @@
 				9B0EBFA41F1C68EE001FB027 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
