@@ -66,8 +66,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="LogIn:" destination="mPB-KE-ePR" eventType="touchUpInside" id="E8e-KI-nw9"/>
-                                    <action selector="Reg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2db-3J-hXG"/>
+                                    <segue destination="mPB-KE-ePR" kind="show" id="bVg-Wu-d8V"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vacciminders" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LM6-2W-QUg">
@@ -148,7 +147,6 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s3B-Zh-s4W"/>
                                     <action selector="btnSO:" destination="at6-fP-DPz" eventType="touchUpInside" id="xDh-4d-Ybe"/>
                                 </connections>
                             </button>
@@ -204,7 +202,6 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yjG-rx-gkL"/>
                                     <action selector="btnSI:" destination="mPB-KE-ePR" eventType="touchUpInside" id="EVJ-yn-mf4"/>
                                 </connections>
                             </button>
@@ -225,7 +222,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="LogIn:" destination="mPB-KE-ePR" eventType="touchUpInside" id="GOQ-5S-dh6"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="tss-z7-AAU"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vacciminders" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axT-dp-rHB">

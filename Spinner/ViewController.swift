@@ -18,12 +18,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        print("From : 1 viewdidload")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        print("From 1z: didrevive")
         // Dispose of any resources that can be recreated.
     }
 
@@ -35,6 +36,7 @@ class ViewController: UIViewController {
             
             if Error != nil{
                 _ = UIAlertController(title: "Error", message: Error?.localizedDescription, preferredStyle: .alert)
+                print("1 : If")
                 
             }
                 
@@ -43,21 +45,14 @@ class ViewController: UIViewController {
                 let storyBoard: UIStoryboard = UIStoryboard(name: "Main",bundle:nil)
                 let newViewController = storyBoard.instantiateViewController(withIdentifier: "Dashboard")
                 self.present(newViewController, animated: false,completion: nil)
+                print("1 : Else")
             }
             
             
         }
      
-        
-        
-    }
+}
     
-    @IBAction func Reg(_ sender: Any) {
-        
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main",bundle:nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "Register")
-        self.present(newViewController, animated: true,completion: nil)
-    }
 
 }
 
