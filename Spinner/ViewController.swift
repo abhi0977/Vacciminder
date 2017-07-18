@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         print("From : 1 viewdidload")
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -33,12 +34,15 @@ class ViewController: UIViewController {
     @IBAction func btnLogin(_ sender: Any) {
         
         Auth.auth().signIn(withEmail: Username.text!, password: Password.text!) { (User, Error) in
-            
             if Error != nil{
                 _ = UIAlertController(title: "Error", message: Error?.localizedDescription, preferredStyle: .alert)
                 print("1 : If")
                 
+                
+                
             }
+                
+            
                 
             else{
                 print("Successful sign innnn.")
@@ -46,6 +50,9 @@ class ViewController: UIViewController {
                 let newViewController = storyBoard.instantiateViewController(withIdentifier: "Dashboard")
                 self.present(newViewController, animated: false,completion: nil)
                 print("1 : Else")
+                let aString = self.Username.text
+                let newString = aString?.replacingOccurrences(of: "@", with: "+", options: .literal, range: nil)
+                print(newString)
             }
             
             
