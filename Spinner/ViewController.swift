@@ -18,16 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Auth.auth().addStateDidChangeListener { auth, user in
-            if user != nil {
-                // User is signed in. Show home screen
-                let storyBoard: UIStoryboard = UIStoryboard(name: "Main",bundle:nil)
-                let newViewController = storyBoard.instantiateViewController(withIdentifier: "Dashboard")
-                self.present(newViewController, animated: false,completion: nil)
-            } else {
-                // No User is signed in. Show user the login screen
-            }
-        }
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -61,6 +52,12 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func Reg(_ sender: Any) {
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main",bundle:nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "Register")
+        self.present(newViewController, animated: true,completion: nil)
+    }
 
 }
 

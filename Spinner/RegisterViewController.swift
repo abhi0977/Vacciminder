@@ -20,9 +20,20 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        let initialLocation = CLLocation(latitude: 21.282778, longitude: -157.829444)
-        self.centerMapOnLocation(location: initialLocation)
+        Auth.auth().addStateDidChangeListener { auth, user in
+            if user != nil {
+                // User is signed in. Show home screen
+                let storyBoard: UIStoryboard = UIStoryboard(name: "Main",bundle:nil)
+                let newViewController = storyBoard.instantiateViewController(withIdentifier: "Dashboard")
+                self.present(newViewController, animated: false,completion: nil)
+            } else {
+                // No User is signed in. Show user the login screen
+            }
+        }
+        
+//
+//        let initialLocation = CLLocation(latitude: 21.282778, longitude: -157.829444)
+//        self.centerMapOnLocation(location: initialLocation)
 
 //         Do any additional setup after loading the view.
     }
@@ -58,14 +69,22 @@ class RegisterViewController: UIViewController {
         }
         
         
+        
+        
     }
     
-    func centerMapOnLocation(location: CLLocation) {
-        let regionRadius: CLLocationDistance = 1000
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
-                                                                  regionRadius * 2.0, regionRadius * 2.0)
-        mapview.setRegion(coordinateRegion, animated: true)
+    @IBAction func LogIn(_ sender: Any) {
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main",bundle:nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "Main")
+        self.present(newViewController, animated: true,completion: nil)
     }
+//    func centerMapOnLocation(location: CLLocation) {
+//        let regionRadius: CLLocationDistance = 1000
+//        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+//                                                                  regionRadius * 2.0, regionRadius * 2.0)
+//        mapview.setRegion(coordinateRegion, animated: true)
+//    }
    
 
 }
