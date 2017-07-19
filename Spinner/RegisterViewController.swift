@@ -22,6 +22,7 @@ class RegisterViewController: UIViewController {
             if user != nil {
                 // User is signed in. Show home screen
                 let storyBoard: UIStoryboard = UIStoryboard(name: "Main",bundle:nil)
+                
                 let newViewController = storyBoard.instantiateViewController(withIdentifier: "Dashboard")
                 self.present(newViewController, animated: false,completion: nil)
             } else {

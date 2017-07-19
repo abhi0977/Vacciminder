@@ -6,6 +6,7 @@ target 'Spinner' do
   use_frameworks!
 	pod "SwiftSpinner"
 	pod “FirebaseCore”
+	pod “Firebase/Database”
 	pod “Firebase/Auth”
 pod “Firebase”
   # Pods for Spinner

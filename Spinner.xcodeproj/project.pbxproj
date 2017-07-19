@@ -16,6 +16,8 @@
 		9B0EBFA61F1C748E001FB027 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B0EBFA51F1C748E001FB027 /* GoogleService-Info.plist */; };
 		9B5035281F1CA0D700887E57 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5035271F1CA0D700887E57 /* NewViewController.swift */; };
 		9B50352A1F1CAEEC00887E57 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5035291F1CAEEC00887E57 /* RegisterViewController.swift */; };
+		9BF406311F1F2DEA00FDE438 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF406301F1F2DEA00FDE438 /* UpdateViewController.swift */; };
+		9BF406331F1F3A9C00FDE438 /* ViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF406321F1F3A9C00FDE438 /* ViewControllerUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		9B0EBFA51F1C748E001FB027 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9B5035271F1CA0D700887E57 /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		9B5035291F1CAEEC00887E57 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9BF406301F1F2DEA00FDE438 /* UpdateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
+		9BF406321F1F3A9C00FDE438 /* ViewControllerUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUtils.swift; sourceTree = "<group>"; };
 		ED02A6E4FE2CEDE01FF68E5B /* Pods_Spinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5BC5A6BD104E9ACBA376285 /* Pods-Spinner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spinner.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spinner/Pods-Spinner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +88,8 @@
 				9B0EBF9F1F1C68EE001FB027 /* Info.plist */,
 				9B5035271F1CA0D700887E57 /* NewViewController.swift */,
 				9B5035291F1CAEEC00887E57 /* RegisterViewController.swift */,
+				9BF406301F1F2DEA00FDE438 /* UpdateViewController.swift */,
+				9BF406321F1F3A9C00FDE438 /* ViewControllerUtils.swift */,
 			);
 			path = Spinner;
 			sourceTree = "<group>";
@@ -223,8 +229,10 @@
 			files = (
 				9B5035281F1CA0D700887E57 /* NewViewController.swift in Sources */,
 				9B0EBF961F1C68EE001FB027 /* ViewController.swift in Sources */,
+				9BF406331F1F3A9C00FDE438 /* ViewControllerUtils.swift in Sources */,
 				9B0EBF941F1C68EE001FB027 /* AppDelegate.swift in Sources */,
 				9B50352A1F1CAEEC00887E57 /* RegisterViewController.swift in Sources */,
+				9BF406311F1F2DEA00FDE438 /* UpdateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

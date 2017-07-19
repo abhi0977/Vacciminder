@@ -52,7 +52,7 @@ class ViewController: UIViewController {
                 print("1 : Else")
                 let aString = self.Username.text
                 let newString = aString?.replacingOccurrences(of: "@", with: "+", options: .literal, range: nil)
-                print(newString)
+                print(newString ?? "H")
             }
             
             
