@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "63D234119800FFDFD7D813D29CA1A5D7"
+               BlueprintIdentifier = "D9C342D897CC0BCF9CF12BAE5BDB9E8C"
                BuildableName = "Pods_Spinner.framework"
                BlueprintName = "Pods-Spinner"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "63D234119800FFDFD7D813D29CA1A5D7"
+            BlueprintIdentifier = "D9C342D897CC0BCF9CF12BAE5BDB9E8C"
             BuildableName = "Pods_Spinner.framework"
             BlueprintName = "Pods-Spinner"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -19,11 +19,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftSpinner.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>nanopb.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,17 +32,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>63D234119800FFDFD7D813D29CA1A5D7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D3A520AAA725202E2238C05B31158F09</key>
+		<key>D9C342D897CC0BCF9CF12BAE5BDB9E8C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		13BBCDAE8EEC16F9BF431BAF /* Pods_Spinner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED02A6E4FE2CEDE01FF68E5B /* Pods_Spinner.framework */; };
+		494E38311F25D1B30077703D /* AddChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E38301F25D1B30077703D /* AddChildViewController.swift */; };
+		4986C9F21F284B80000C81D2 /* btnAddChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986C9F11F284B80000C81D2 /* btnAddChildViewController.swift */; };
 		9B0EBF941F1C68EE001FB027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0EBF931F1C68EE001FB027 /* AppDelegate.swift */; };
 		9B0EBF961F1C68EE001FB027 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0EBF951F1C68EE001FB027 /* ViewController.swift */; };
 		9B0EBF991F1C68EE001FB027 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0EBF971F1C68EE001FB027 /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		14E874B3A6F9961777AF62DD /* Pods-Spinner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spinner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spinner/Pods-Spinner.debug.xcconfig"; sourceTree = "<group>"; };
+		494E38301F25D1B30077703D /* AddChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddChildViewController.swift; sourceTree = "<group>"; };
+		4986C9F11F284B80000C81D2 /* btnAddChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = btnAddChildViewController.swift; sourceTree = "<group>"; };
 		9B0EBF901F1C68EE001FB027 /* Spinner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spinner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B0EBF931F1C68EE001FB027 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B0EBF951F1C68EE001FB027 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 				9B5035291F1CAEEC00887E57 /* RegisterViewController.swift */,
 				9BF406301F1F2DEA00FDE438 /* UpdateViewController.swift */,
 				9BF406321F1F3A9C00FDE438 /* ViewControllerUtils.swift */,
+				494E38301F25D1B30077703D /* AddChildViewController.swift */,
+				4986C9F11F284B80000C81D2 /* btnAddChildViewController.swift */,
 			);
 			path = Spinner;
 			sourceTree = "<group>";
@@ -229,10 +235,12 @@
 			files = (
 				9B5035281F1CA0D700887E57 /* NewViewController.swift in Sources */,
 				9B0EBF961F1C68EE001FB027 /* ViewController.swift in Sources */,
+				4986C9F21F284B80000C81D2 /* btnAddChildViewController.swift in Sources */,
 				9BF406331F1F3A9C00FDE438 /* ViewControllerUtils.swift in Sources */,
 				9B0EBF941F1C68EE001FB027 /* AppDelegate.swift in Sources */,
 				9B50352A1F1CAEEC00887E57 /* RegisterViewController.swift in Sources */,
 				9BF406311F1F2DEA00FDE438 /* UpdateViewController.swift in Sources */,
+				494E38311F25D1B30077703D /* AddChildViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
